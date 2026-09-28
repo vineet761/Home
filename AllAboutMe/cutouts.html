@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All About Me - Cutouts (A5)</title>
+<style>
+  @page { size: A5; margin: 8mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 6mm;
+  }
+  h1 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 6mm 0;
+  }
+  .sheet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+  }
+  .cutout {
+    border: 2px dashed #555;
+    border-radius: 14px;
+    padding: 4mm 2mm;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.2;
+    min-height: 16mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+  }
+  .cutout.title { font-size: 15px; grid-column: span 3; min-height: 12mm; }
+  .cutout.wide { grid-column: span 2; }
+  .placeholder {
+    border: 2px dashed #999;
+    border-radius: 8px;
+    color: #999;
+    font-style: italic;
+    font-weight: normal;
+  }
+  .section-label {
+    grid-column: 1 / -1;
+    font-size: 11px;
+    color: #666;
+    margin-top: 4mm;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1mm;
+  }
+  .scissors {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 10px;
+    color: #999;
+    margin-bottom: 2mm;
+  }
+</style>
+</head>
+<body>
+  <h1>All About Me &mdash; Cutouts</h1>
+  <div class="scissors">&#9986; cut along the dashed lines and glue around your body drawing</div>
+
+  <div class="sheet">
+    <div class="cutout title">THIS IS ME</div>
+
+    <div class="section-label">Traits &amp; favourites</div>
+    <div class="cutout">KIND</div>
+    <div class="cutout">BLACK HAIR</div>
+    <div class="cutout">BLACK</div>
+    <div class="cutout">BLUE</div>
+    <div class="cutout">RED</div>
+    <div class="cutout">FAV CAR<br>RED</div>
+
+    <div class="section-label">Toys, food &amp; hobbies</div>
+    <div class="cutout">PAW PATROL</div>
+    <div class="cutout">BIRYANI</div>
+    <div class="cutout">TIGER</div>
+    <div class="cutout">FOOTBALL</div>
+    <div class="cutout">MUSIC</div>
+    <div class="cutout">FLYZA</div>
+    <div class="cutout">KILL</div>
+
+    <div class="section-label">People</div>
+    <div class="cutout">MY FRIENDS</div>
+
+    <div class="section-label">Photo placeholders (paste your own photo)</div>
+    <div class="cutout placeholder wide">Family Photo</div>
+    <div class="cutout placeholder">Grandparent Photo</div>
+    <div class="cutout placeholder">Photo from India</div>
+    <div class="cutout placeholder">Class Photo</div>
+  </div>
+</body>
+</html>

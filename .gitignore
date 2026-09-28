@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+
+# Logs
+*.log
+
+# Nested repos with their own remotes/identities - not part of this repo
+Personal Projects/Zion/
+Personal Projects/Toast/
+
+# Archive too large for GitHub (100MB limit) - kept locally only
+Personal Projects/Toast.zip
